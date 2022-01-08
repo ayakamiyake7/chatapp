@@ -82,6 +82,10 @@ export default function SignIn({ setName }) {
             color="primary"
             className={classes.submit}
             disabled={disabled}
+            onClick={(e) => {
+              e.preventDefault();
+              setName(string);
+            }}
           >
             Start
           </Button>
